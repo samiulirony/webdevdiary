@@ -28,7 +28,7 @@ function NavigateLibrary() {
                             {/* Page Content Start Here */}
 
                             <h2 className="text-xl font-bold">Navigate Library</h2>
-                            <p>Page Content here ....</p>
+                            <p>Show Topics Cards</p>
 
 
 
