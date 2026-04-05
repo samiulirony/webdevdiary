@@ -1,44 +1,17 @@
-import Breadcrumbs from "../layout/Breadcrumbs"
-import Footer from "../layout/Footer"
-import TopBar from "../layout/TopBar"
-import Sidebar from "../layout/Sidebar"
+import DashboardLaout from "../layout/DashboardLaout"
+
+
 
 function Logout() {
     return (
         <>
-            <div className="flex h-screen">
-                {/* Sidebar */}
-                <Sidebar />
-
-                {/* Right Side */}
-                <div className="flex-1 flex flex-col h-full">
-
-                    {/* TopBar */}
-                    <TopBar />
-
-                    {/* Breadcrumbs */}
-                    <Breadcrumbs />
-                    
-
-                    {/* Page Content Area : Scrollable */}
-                    <main className="flex-1 overflow-y-auto p-2 bg-gray-200">
-                        <div className="bg-white p-4 shadow">
-                            
-                            {/* Page Content Start Here */}
-                            
-                            <h2 className="text-xl font-bold">Logout Page</h2>
-                            <p>Keep blank, copy this for others pages.</p>
-
-                        
-
-                        </div>
-                    </main>
-
-                    {/* Footer*/}
-                    <Footer />
+            <DashboardLaout>
+                {/* Page content goes here. You can add your dashboard widgets, charts, and other components to display relevant information to the user. This area is flexible and can be customized based on your needs. */}
+                <div className="p-4">
+                    <h1 className="text-2xl font-bold mb-4">Logout</h1>
+                    <p className="text-gray-600">You have been successfully logged out. Thank you for using our service!</p>
                 </div>
-            </div>
-
+            </DashboardLaout>
 
         </>
     )

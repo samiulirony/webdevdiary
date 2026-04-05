@@ -1,48 +1,16 @@
-import Breadcrumbs from "../../layout/Breadcrumbs"
-import Footer from "../../layout/Footer"
-import Sidebar from "../../layout/Sidebar"
-import TopBar from "../../layout/TopBar"
+import DashboardLaout from "../../layout/DashboardLaout"
 
 
-function BlankPage() {
+
+function Dashboard() {
     return (
         <>
-            <div className="flex h-screen">
-                {/* Sidebar */}
-                <Sidebar />
-
-                {/* Right Side */}
-                <div className="flex-1 flex flex-col h-full">
-
-                    {/* TopBar */}
-                    <TopBar />
-
-                    {/* Breadcrumbs */}
-                    <Breadcrumbs />
-                    
-
-                    {/* Page Content Area : Scrollable */}
-                    <main className="flex-1 overflow-y-auto p-2 bg-gray-200">
-                        <div className="bg-white p-4 shadow">
-                            
-                            {/* Page Content Start Here */}
-                            
-                            <h2 className="text-xl font-bold">Dashboard</h2>
-                            <p>Page Content here ....</p>
-
-                        
-
-                        </div>
-                    </main>
-
-                    {/* Footer*/}
-                    <Footer />
-                </div>
-            </div>
-
-
+            <DashboardLaout>
+                <h2 className="text-2xl font-bold mb-4">Welcome to Your Dashboard</h2>
+                <p className="text-gray-700 mb-6">This is your dashboard where you can manage your content, view analytics, and customize your settings.</p>
+            </DashboardLaout>
         </>
     )
 }
 
-export default BlankPage
+export default Dashboard

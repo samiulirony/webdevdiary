@@ -1,44 +1,15 @@
-import Breadcrumbs from "../../layout/Breadcrumbs"
-import Footer from "../../layout/Footer"
-import Sidebar from "../../layout/Sidebar"
-import TopBar from "../../layout/TopBar"
+import DashboardLaout from "../../layout/DashboardLaout"
+
 
 function Settings() {
     return (
         <>
-            <div className="flex h-screen">
-                {/* Sidebar */}
-                <Sidebar />
+            <DashboardLaout>
+                {/* Page content goes here. You can add your dashboard widgets, charts, and other components to display relevant information to the user. This area is flexible and can be customized based on your needs. */}
 
-                {/* Right Side */}
-                <div className="flex-1 flex flex-col h-full">
-
-                    {/* TopBar */}
-                    <TopBar />
-
-                    {/* Breadcrumbs */}
-                    <Breadcrumbs />
-                    
-
-                    {/* Page Content Area : Scrollable */}
-                    <main className="flex-1 overflow-y-auto p-2 bg-gray-200">
-                        <div className="bg-white p-4 shadow">
-                            
-                            {/* Page Content Start Here */}
-                            
-                            <h2 className="text-xl font-bold">Settings Page</h2>
-                            <p>Keep blank, copy this for others pages.</p>
-
-                        
-
-                        </div>
-                    </main>
-
-                    {/* Footer*/}
-                    <Footer />
-                </div>
-            </div>
-
+                <h2 className="text-2xl font-bold mb-4">Settings:</h2>
+                <p className="text-gray-700 mb-6">Manage your account settings and preferences.</p>
+            </DashboardLaout>
 
         </>
     )

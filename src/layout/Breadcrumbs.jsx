@@ -7,17 +7,19 @@ function Breadcrumbs() {
 
     return (
         <>
-            {/* Breadcrumbs with Icons */}
+
+            {/* BREADCRUMBS */}
             
-            <div className="breadcrumbs pl-6">
-                
+            <div className="text-sm breadcrumbs">
                 <ul>
-                    <li><a><FaHome /></a></li>
-                    <li><a><GoFileDirectoryFill /> Library</a></li>
+                    <li><a><FaHome />Home</a></li>
+                    <li><a><GoFileDirectoryFill />Library</a></li>
                     <li><a><SlDocs /> daisyUI</a></li>
+                    <li className="font-medium text-base-content">Current Page</li>
                 </ul>
             </div>
             
+
 
         </>
     )
